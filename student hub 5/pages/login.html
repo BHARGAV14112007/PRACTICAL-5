@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Login</title>
+    <meta name="description" content="Sign in to your Student Hub account to access study resources and events.">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/header.js"></script>
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+            <a href="../index.html" class="nav-brand">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                <span>STUDENT HUB</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+            </ul>
+            <button type="button" class="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="hero-wrapper" style="padding: 2rem 0;">
+            <!-- Login Form Card -->
+            <div class="auth-card" style="width: 100%; max-width: 450px; margin: 0 auto;">
+                <h1 class="auth-title">Welcome Back!</h1>
+                <p class="auth-subtitle">Log in to access your student dashboard</p>
+
+                <form action="dashboard.html" method="GET">
+                    <div class="form-group">
+                        <label class="form-label" for="login-email">Email or Username</label>
+                        <input type="text" id="login-email" name="username" class="form-control" placeholder="student@university.edu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; font-size: 0.875rem;">
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="remember" checked>
+                            <span>Remember Me</span>
+                        </label>
+                        <a href="faq.html" style="color: var(--blue);">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" style="padding: 0.75rem;">Login</button>
+                </form>
+
+                <p class="auth-footer-text">
+                    Don't have an account? <a href="register.html" style="color: var(--blue); font-weight: 600;">Register Here</a>
+                </p>
+            </div>
+
+            <!-- Student Illustration -->
+            <div style="text-align: center;">
+                <svg class="hero-illustration" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="500" height="400" rx="16" fill="#EAF3FF"/>
+                    <circle cx="250" cy="180" r="100" fill="#DBEAFE"/>
+                    <rect x="150" y="240" width="200" height="120" rx="12" fill="#2563D9"/>
+                    <circle cx="250" cy="160" r="45" fill="#163B65"/>
+                    <path d="M190 280H310" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; 2026 Student Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

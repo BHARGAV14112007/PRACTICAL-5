@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Frequently Asked Questions</title>
+    <meta name="description" content="Find answers to common questions about Student Hub events, study resources, and account management.">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/header.js"></script>
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+            <a href="../index.html" class="nav-brand">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                <span>STUDENT HUB</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button type="button" class="theme-toggle">Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-container" style="max-width: 900px;">
+        <div class="page-header text-center" style="margin-top: 1rem;">
+            <h1 class="page-title" style="font-size: 2.25rem;">Frequently Asked Questions</h1>
+            <p class="page-subtitle">Find quick answers to common questions about Student Hub</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="card mb-3" style="padding: 1rem;">
+            <input type="text" placeholder="Search questions or topics..." class="form-control">
+        </div>
+
+        <!-- Pure HTML5 Accordion FAQs using <details> and <summary> -->
+        <div style="margin-bottom: 3rem;">
+            
+            <details class="faq-accordion" open>
+                <summary class="faq-question">How do I register for an event?</summary>
+                <div class="faq-answer">
+                    Navigating to the <strong>Events</strong> page from the main menu allows you to browse all upcoming campus events. Click on the "Register Now" button under any event card to reserve your spot instantly.
+                </div>
+            </details>
+
+            <details class="faq-accordion">
+                <summary class="faq-question">Is it free to join campus events?</summary>
+                <div class="faq-answer">
+                    Yes! The vast majority of student events, workshops, hackathons, and guest lectures hosted on Student Hub are 100% free for registered university students.
+                </div>
+            </details>
+
+            <details class="faq-accordion">
+                <summary class="faq-question">How can I update my profile information?</summary>
+                <div class="faq-answer">
+                    Log in to your account and click on <strong>Profile</strong> in the student sidebar. You can update your course details, phone number, residential address, and profile photo anytime.
+                </div>
+            </details>
+
+            <details class="faq-accordion">
+                <summary class="faq-question">Where can I find study resources?</summary>
+                <div class="faq-answer">
+                    Study resources, mid-term exam schedules, lab manuals, and previous year question papers can be accessed directly from your <strong>Student Dashboard</strong> under the Resources tab.
+                </div>
+            </details>
+
+            <details class="faq-accordion">
+                <summary class="faq-question">How can I contact support?</summary>
+                <div class="faq-answer">
+                    You can reach out to our campus support team through our <strong><a href="contact.html">Contact Us</a></strong> page, or email us directly at <code>support@studenthub.edu</code>.
+                </div>
+            </details>
+
+            <details class="faq-accordion">
+                <summary class="faq-question">How do I reset my password?</summary>
+                <div class="faq-answer">
+                    On the <strong>Login</strong> page, click the "Forgot Password?" link below the password input field. Follow the on-screen instructions to receive a password reset link in your student email.
+                </div>
+            </details>
+
+        </div>
+
+        <!-- Support Section Card -->
+        <div class="card text-center mb-3" style="background: var(--light-blue); border-color: var(--blue);">
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem;">Still Have Questions?</h3>
+            <p style="color: var(--muted); margin-bottom: 1rem;">Can't find the answer you are looking for? Please get in touch with our team.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Support</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; 2026 Student Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
